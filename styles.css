@@ -1,0 +1,873 @@
+
+/* Hero Section */
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background: linear-gradient(to bottom, #FFDFDF, #FFE6F7);
+    text-align: center;
+    padding: 20px;
+}
+
+.text-section {
+    max-width: 600px;
+    margin: 20px;
+}
+
+.text-section h1 {
+    font-size: 3rem;
+    color: #FF0078;
+}
+
+.text-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.order-now-button {
+    background-color: #FF0078;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.order-now-button:hover {
+    background-color: #FF4D88;
+}
+
+.content img {
+    max-width: 400px;
+    height: auto;
+    margin: 20px;
+}
+
+/* Menu Section */
+.menu-section {
+    padding: 50px 20px;
+    background-color: #F6EFA7;
+    text-align: center;
+}
+
+.menu-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    border-radius:40px;
+    width: 250px;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 90;
+    border-radius: 10px;
+}
+
+.card h5 {
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.card p {
+    font-size: 1rem;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.card button {
+    background-color: #FF0078;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #e0c48d;
+}
+
+/* Footer */
+footer {
+    background-color: #FF0078;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-section {
+        margin: 20px 0;
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-button {
+        margin-top: 10px;
+    }
+
+    .text-section h1 {
+        font-size: 2rem;
+    }
+
+    .card h5 {
+        font-size: 1.2rem;
+    }
+
+    .card p {
+        font-size: 0.9rem;
+    }
+}
+/* About Section */
+.about-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #fdfdfd;
+}
+
+.about-section img {
+    width: 60%;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Testimonials Section */
+.testimonials-section {
+    padding: 40px 20px;
+    background-color: #ff0078;
+    color: white;
+    text-align: center;
+}
+
+.testimonials {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.testimonial-card {
+    background-color: white;
+    color: #333;
+    padding: 20px;
+    border-radius: 15px;
+    max-width: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.customer-img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.testimonial-text {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.customer-name {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Subscription Section */
+.subscription-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    border-radius: 2px;
+}
+
+.subscription-section input {
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    border: none;
+    width: 250px;
+    max-width: 80%;
+}
+
+.subscription-section button {
+    padding: 10px 20px;
+    background-color: #ff0078;
+    color: rgb(3, 3, 3);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.subscription-section button:hover {
+    background-color: #edcb98;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+.contact-button {
+    padding: 10px 20px;
+    background-color: #FF0078;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.contact-button:hover {
+    background-color: #d3005b;
+}
+
+.sign-up-button {
+    padding: 10px 20px;
+    background-color: #FF0078;
+    border: none;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.sign-up-button:hover {
+    background-color: #efd9ac;
+}
+
+/* Content Section */
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.text-section {
+    max-width: 50%;
+}
+
+.text-section h1 {
+    font-size: 48px;
+    color: #FF0078;
+}
+
+.text-section p {
+    font-size: 18px;
+}
+
+.text-section button {
+    padding: 12px 20px;
+    background-color: #FF0078;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.text-section button:hover {
+    background-color: #d3005b;
+}
+
+img {
+    width: 40%;
+    border-radius: 10px;
+}
+
+/* Profile Section */
+.profile-section {
+    padding: 40px;
+    background-color: #f1eded;
+    text-align: center;
+}
+
+.profile-section h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.profile-form form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.profile-form label {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.profile-form input,
+.profile-form textarea {
+    padding: 12px;
+    margin-top: 8px;
+    width: 100%;
+    max-width: 400px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.profile-form textarea {
+    height: 100px;
+    resize: none;
+}
+
+.profile-form button {
+    padding: 12px 20px;
+    margin-top: 20px;
+    background-color: #FF0078;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.profile-form button:hover {
+    background-color: #d3005b;
+}
+
+/* Footer */
+footer {
+    background-color: #FF0078;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color:#f6efa7;
+    padding: 10px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    font-size: 22px;
+}
+
+.navbar h5, .navbar a {
+    color: rgb(255, 17, 172);
+    text-decoration: none;
+    margin: 0 13px;
+}
+
+.navbar a:hover {
+text-decoration: underline;
+cursor: pointer; 
+color: #000000; 
+}
+
+
+.sign-up-button {
+    background-color: rgb(251, 29, 184);
+    color: #090909;
+    border: none;
+    padding: 9px 15px; /* Slightly increased padding for better responsiveness */
+    border-radius: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem; /* Ensure it scales well on different screens */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for color changes */
+}
+
+.sign-up-button:hover {
+    background-color:rgb(248, 241, 159); /* Button background changes on hover */
+    color: rgb(1, 1, 1); /* Text changes to white for contrast */
+    transform: scale(1.1); /* Slight zoom-in effect for interactivity */
+}
+
+.sign-up-button:active {
+    transform: scale(0.95); /* Slightly reduce size when clicked for feedback */
+    background-color:#f82ec6; /* Add a different shade for active state */
+}
+
+/* Order Section */
+.order-section {
+    padding: 40px;
+    text-align: center;
+    background-color:rgb(244, 244, 244);
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.order-section h1 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin: 20px 0;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form-group label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: none;
+}
+
+.form-group button {
+    padding: 12px 30px;
+    background-color: #FF0078;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.form-group button:hover {
+    background-color: #d3005b;
+}
+
+/* Footer */
+footer {
+    background-color: #FF0078;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+/* Profile Image Styling */
+.customer-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+/* Testimonials Section */
+.testimonials-section {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.testimonials-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.testimonial-card {
+    background-color: rgb(255, 255, 255);
+    border-radius: 8px;
+    padding: 20px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.testimonial-card img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.testimonial-text {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.customer-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+/* General button styling */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background-color: #FF0078; /* Highlight color */
+    color: white; /* Text color on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Specific styling for the sign-up button */
+.sign-up-button {
+    background-color: #f82cb4; /* Default background */
+    color: black; /* Default text color */
+}
+
+.sign-up-button:hover {
+    background-color: #f5e4a4;
+    color: white;
+}
+
+/* Specific styling for the order now button */
+.order-now-button {
+    background-color: #FF0078;
+    color: white;
+}
+
+.order-now-button:hover {
+    background-color: #F6EFA7;
+    color: black;
+}
+/* Order Confirmation Styling */
+.order-confirmation {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #e0c48d;
+}
+
+.order-summary {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    background: #f6efa7;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+.order-item-img {
+    width: 80px;
+    height: 80px;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.order-item h3 {
+    margin: 0;
+    font-size: 20px;
+    color: #ff0078;
+}
+
+.order-item p {
+    margin: 5px 0 0;
+    color: #333;
+}
+
+.total-price {
+    margin-top: 30px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.order-buttons {
+    margin-top: 30px;
+}
+
+.order-buttons button {
+    background-color: #ff0078;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.order-buttons button:hover {
+    background-color: #d90063;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1px;
+    background-color: #ff0078;
+    color: white;
+}
+
+.place-order-button {
+    background-color: #ff0078;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.place-order-button:hover {
+    background-color: #d90063;
+}
+
+.total-price {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+/* About Us Section */
+.about-us-section {
+    padding: 40px 20px;
+    background-color: #f6efa7;
+    text-align: center;
+}
+
+.about-header h1 {
+    font-size: 36px;
+    color: #ff0078;
+    margin-bottom: 10px;
+}
+
+.about-header p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+}
+
+.about-text {
+    max-width: 500px;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+}
+
+.about-text h2 {
+    font-size: 24px;
+    color: #ff0078;
+    margin-bottom: 10px;
+}
+
+.about-text ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-text ul li {
+    margin: 10px 0;
+}
+
+.about-text ul li strong {
+    color: #333;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+        .marquee {
+            font-weight: bold;
+            font-size: 20px;
+            animation: marquee 10s linear infinite; /* Controls marquee scrolling */
+            white-space: nowrap;
+            background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            display: inline-block;
+            background-clip: text;
+
+
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .marquee-container {
+            overflow: hidden;
+            width: 100%;
+            background: #fff; /* Optional: Background of the marquee container */
+            padding: 10px 0;
+        }
+        /* General Order Confirmation Styling */
+.order-confirmation {
+    padding: 20px;
+    background-color:#ffffff;
+    text-align: center;
+}
+
+.order-summary h2 {
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.order-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color:#f6efa7;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.order-item-img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.order-item-details {
+    margin-left: 20px;
+    text-align: left;
+}
+
+.order-item-details h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.order-item-details p {
+    color: #777;
+}
+
+/* Hover Effect for Order Items */
+.order-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    background-color: #f8f8f8;
+}
+
+.order-item:hover .order-item-img {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.order-item:hover .order-item-details h3 {
+    color: #ff0078;
+    transition: color 0.3s ease;
+}
+
+.order-item:hover .order-item-details p {
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+   
+
+
+
+
+

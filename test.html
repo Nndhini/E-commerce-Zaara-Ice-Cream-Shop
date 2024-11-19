@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaara's Ice Cream Shop - Testimonials</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+    .marquee {
+        font-weight: bold;
+        font-size: 20px;
+        animation: marquee 10s linear infinite; /* Controls marquee scrolling */
+        white-space: nowrap;
+        background: linear-gradient(to right, red, orange, yellow, green, cyan, blue, violet);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: inline-block;
+        background-clip: text;
+
+
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+
+    .marquee-container {
+        overflow: hidden;
+        width: 100%;
+        background: #fff; /* Optional: Background of the marquee container */
+        padding: 10px 0;
+    }
+</style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <h5><a href="index.html" target="_blank">HOME</a></h5>
+        <h5><a href="menu.html" target="_blank">MENU</a></h5>
+        <h5><a href="test.html" target="_blank">TESTIMONIALS</a></h5>
+        <h5><a href="order.html" target="_blank">MY ORDERS</a></h5>
+        <a href="profile.html" target="_blank"><button class="sign-up-button">SIGN UP</button></a>
+    </div>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="marquee-container">
+            <div class="marquee">See Our Customer's Review</div>
+        </div>
+
+        <h1>What Our Customers Are Saying</h1>
+
+        <div class="testimonials">
+            <!-- Testimonial 1 -->
+            <div class="testimonial-card">
+                <img src="C:\Users\Asus\Downloads\img\red.jpeg" alt="Customer 1" class="customer-img">
+                <p class="testimonial-text">"Zaara's Ice Cream Shop has the best vanilla ice cream I've ever had! It’s so creamy and delicious. Highly recommend!"</p>
+                <p class="customer-name">- Sarah L.</p>
+            </div>
+
+            <!-- Testimonial 2 -->
+            <div class="testimonial-card">
+                <img src="C:\Users\Asus\Downloads\p.jpeg" alt="Customer 2" class="customer-img">
+                <p class="testimonial-text">"The chocolate fudge ice cream is absolutely heavenly! I always come back for more. 10/10 would recommend!"</p>
+                <p class="customer-name">- Louis</p>
+            </div>
+
+            <!-- Testimonial 3 -->
+            <div class="testimonial-card">
+                <img src="C:\Users\Asus\Downloads\pink.jpeg" alt="Customer 3" class="customer-img">
+                <p class="testimonial-text">"I love the variety of flavors at Zaara's. Their pistachio ice cream is my personal favorite – it's the perfect balance of sweet and nutty!"</p>
+                <p class="customer-name">- Silki Chakraborty</p>
+            </div>
+
+            <!-- Testimonial 4 -->
+            <div class="testimonial-card">
+                <img src="C:\Users\Asus\Downloads\img\b.jpeg" alt="Customer 4" class="customer-img">
+                <p class="testimonial-text">"The strawberry ice cream tastes so fresh and fruity. Every bite feels like summer! Zaara's Ice Cream Shop is a must-visit!"</p>
+                <p class="customer-name">- Nikhil Thomas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-us-section">
+        <div class="about-header">
+            <h1>About Us</h1>
+            <p>Get to know the story behind Zaara's Ice Cream Shop!</p>
+        </div>
+
+        <div class="about-content">
+            <div class="about-text">
+                <h2>Our Story</h2>
+                <p>Zaara's Ice Cream Shop began with a dream – to spread happiness, one scoop at a time. From humble beginnings as a small family-run store, we’ve grown into a cherished spot for ice cream lovers. Our commitment to quality and love for ice cream is at the heart of everything we do.</p>
+
+                <h2>Our Mission</h2>
+                <p>We believe ice cream isn’t just a dessert – it’s a moment of joy. Our mission is to create delicious, handcrafted ice cream that brings a smile to every customer. Whether it’s a sunny day treat or a cozy night indulgence, Zaara's is here to make it special.</p>
+
+                <h2>Our Values</h2>
+                <ul>
+                    <li><strong>Quality:</strong> Only the finest ingredients make it into our ice creams.</li>
+                    <li><strong>Community:</strong> Bringing people together through the shared love of ice cream.</li>
+                    <li><strong>Innovation:</strong> Always creating exciting new flavors to delight your taste buds.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscription Section -->
+    <section class="subscription-section">
+        <h2>Stay Updated!</h2>
+        <p>Subscribe to our newsletter for exclusive offers and updates on new flavors!</p>
+        <form>
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </section>
+</body>
+</html>
